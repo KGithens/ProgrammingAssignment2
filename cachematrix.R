@@ -29,7 +29,8 @@ cacheSolve <- function(x) {
   m <- x$getInverse()
   
   #if inverse is cached (and it is a matrix) return it
-  if(!is.null(m) && is.matrix(m)) { 
+  if(!is.null(m) && is.matrix(m)) {
+    message("getting cached data")
     return(m)
   }
   
